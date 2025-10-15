@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "noEmit": true,
+    "types": ["vitest/globals", "vite/client"],
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["*"],
+      "@src/*": ["*"]
+    }
+  },
+  "include": ["src", "vite.config.ts"]
+}
