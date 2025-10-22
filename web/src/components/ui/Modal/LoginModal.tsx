@@ -1,10 +1,11 @@
 import { useMutation } from "@tanstack/react-query"
-import { Button, FormInput, useAuth, useModal } from ".."
+import { Button, FormInput, useModal } from ".."
 import { LoginForm, loginSchema } from "@/helpers/zod.helpers"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { authApi } from "@/api/auth/auth.api"
 import { RegisterModal } from "@/components/ui"
+import { useAuth } from "@/components/ui/AuthProvider"
 
 export const LoginModal = () => {
   const { show, hide } = useModal()
